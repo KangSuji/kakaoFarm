@@ -2,10 +2,10 @@ $(document).ready(function () {
   $(".icon_bookmark").each(function () {
     $(this)
       .mouseenter(function () {
-        $(this).attr("src", "/images/bookmark_fill.svg");
+        $(this).addClass("active");
       })
       .mouseleave(function () {
-        $(this).attr("src", "/images/bookmark.svg");
+        $(this).removeClass("active");
       });
   });
 });
